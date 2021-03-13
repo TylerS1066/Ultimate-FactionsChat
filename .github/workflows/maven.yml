@@ -24,6 +24,7 @@ jobs:
     
     # Build Ultimate-FactionsChat
     - name: Build Ultimate-FactionsChat
+      run: mvn -B package -T 1C --file Ultimate-FactionsChat/pom.xml
 
     - name: Stage jar
       run: mkdir staging && cp Ultimate-FactionsChat/target/Ultimate-FactionsChat.jar staging
