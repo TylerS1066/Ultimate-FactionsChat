@@ -6,7 +6,7 @@
 
     <groupId>net.TylerS1066.ufc</groupId>
     <artifactId>Ultimate-FactionsChat</artifactId>
-    <version>0.1.6</version>
+    <version>0.2.0</version>
     <packaging>jar</packaging>
 
     <name>Ultimate-FactionsChat</name>
@@ -16,7 +16,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>github yo</url>
+    <url>https://github.com/TylerS1066/Ultimate-FactionsChat</url>
 
     <build>
         <finalName>Ultimate-FactionsChat</finalName>
