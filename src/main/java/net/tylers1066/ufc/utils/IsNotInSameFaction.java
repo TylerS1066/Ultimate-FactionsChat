@@ -7,10 +7,10 @@ import org.bukkit.command.CommandSender;
 
 import java.util.function.Predicate;
 
-public class IsInAlliedFaction implements Predicate<CommandSender> {
+public class IsNotInSameFaction implements Predicate<CommandSender> {
     private final Faction baseFaction;
 
-    public IsInAlliedFaction(CommandSender base) {
+    public IsNotInSameFaction(CommandSender base) {
         baseFaction = MPlayer.get(base).getFaction();
     }
 
@@ -18,6 +18,7 @@ public class IsInAlliedFaction implements Predicate<CommandSender> {
     public boolean test(CommandSender other) {
         MPlayer otherMP = MPlayer.get(other);
         Faction otherFaction = otherMP.getFaction();
-        return baseFaction.getRelationTo(otherFaction).isAtMost(Rel.ALLY);
+        Rel rel = baseFaction.getRelationTo(otherFaction);
+        return !(rel.isAtLeast(Rel.RECRUIT));
     }
 }

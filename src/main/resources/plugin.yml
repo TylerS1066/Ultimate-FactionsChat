@@ -1,6 +1,6 @@
 name: Ultimate-FactionsChat
 version: ${project.version}
-main: net.tylers1066.ufc.ultimatefactionschat.UltimateFactionsChat
+main: net.tylers1066.ufc.UltimateFactionsChat
 api-version: 1.12
 depend: [UltimateChat, Factions]
 authors: [TylerS1066]

@@ -2,8 +2,8 @@ package net.tylers1066.ufc.listener;
 
 import br.net.fabiozumbi12.UltimateChat.Bukkit.API.PostFormatChatMessageEvent;
 import br.net.fabiozumbi12.UltimateFancy.UltimateFancy;
-import net.tylers1066.ufc.utils.IsInAlliedFaction;
-import net.tylers1066.ufc.utils.IsInSameFaction;
+import net.tylers1066.ufc.utils.IsNotInAlliedFaction;
+import net.tylers1066.ufc.utils.IsNotInSameFaction;
 import org.bukkit.command.CommandSender;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -23,11 +23,11 @@ public class ChatListener implements Listener {
 
     private void handleFactionChat(PostFormatChatMessageEvent e) {
         HashMap<CommandSender, UltimateFancy> messages = e.getMessages();
-        messages.keySet().removeIf(new IsInSameFaction(e.getSender()));
+        messages.keySet().removeIf(new IsNotInSameFaction(e.getSender()));
     }
 
     private void handleAllyChat(PostFormatChatMessageEvent e) {
         HashMap<CommandSender, UltimateFancy> messages = e.getMessages();
-        messages.keySet().removeIf(new IsInAlliedFaction(e.getSender()));
+        messages.keySet().removeIf(new IsNotInAlliedFaction(e.getSender()));
     }
 }
