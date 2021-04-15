@@ -1,7 +1,7 @@
 name: Ultimate-FactionsChat
 version: ${project.version}
 main: net.tylers1066.ufc.UltimateFactionsChat
-api-version: 1.12
+api-version: 1.14
 depend: [UltimateChat, Factions]
 authors: [TylerS1066]
 description: UltimateChat + MassiveCore Factions integration
