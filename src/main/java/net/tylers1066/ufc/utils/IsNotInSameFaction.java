@@ -19,6 +19,6 @@ public class IsNotInSameFaction implements Predicate<CommandSender> {
         MPlayer otherMP = MPlayer.get(other);
         Faction otherFaction = otherMP.getFaction();
         Rel rel = baseFaction.getRelationTo(otherFaction);
-        return !(rel.isAtLeast(Rel.RECRUIT));
+        return !(rel.isAtLeast(Rel.FACTION));
     }
 }

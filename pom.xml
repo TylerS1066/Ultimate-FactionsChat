@@ -6,7 +6,7 @@
 
     <groupId>net.TylerS1066.ufc</groupId>
     <artifactId>Ultimate-FactionsChat</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.a</version>
     <packaging>jar</packaging>
 
     <name>Ultimate-FactionsChat</name>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <version>1.14.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -99,14 +99,14 @@
         <dependency>
             <groupId>com.massivecraft</groupId>
             <artifactId>MassiveCore</artifactId>
-            <version>2.14.0</version>
+            <version>3.3.2</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/MassiveCore.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.massivecraft</groupId>
             <artifactId>Factions</artifactId>
-            <version>2.14.0</version>
+            <version>3.3.2</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/Factions.jar</systemPath>
         </dependency>
