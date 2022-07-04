@@ -3,6 +3,8 @@
 
 This plugin brings HeroChat style faction and ally chat to UltimateChat.
 
+Due to the lack of support (see the [channel delay issue](https://github.com/FabioZumbi12/UltimateChat/issues/342)), it is highly recommended to not try to use UltimateChat.
+
 
 ## Version support
 The `legacy` branch is coded for 1.12.2 and Factions 2.14.
