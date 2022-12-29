@@ -6,7 +6,7 @@
 
     <groupId>net.TylerS1066.ufc</groupId>
     <artifactId>Ultimate-FactionsChat</artifactId>
-    <version>0.3.a</version>
+    <version>1.0.0_beta-1</version>
     <packaging>jar</packaging>
 
     <name>Ultimate-FactionsChat</name>
