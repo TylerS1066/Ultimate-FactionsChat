@@ -23,7 +23,7 @@ description = "Ultimate-FactionsChat"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 tasks.jar {
-    archiveBaseName.set("Movecraft-Combat")
+    archiveBaseName.set("Ultimate-FactionsChat")
     archiveClassifier.set("")
     archiveVersion.set("")
 }
