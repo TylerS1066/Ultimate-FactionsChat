@@ -13,8 +13,6 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
     compileOnly ("io.github.fabiozumbi12.UltimateChat:UltimateChat-Spigot:+"){ exclude(group = "*")}
-    compileOnly(files("libs/MassiveCore.jar"))
-    compileOnly(files("libs/Factions.jar"))
 }
 
 group = "net.TylerS1066.ufc"
