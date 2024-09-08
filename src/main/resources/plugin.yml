@@ -5,4 +5,4 @@ api-version: 1.14
 depend: [UltimateChat, Factions]
 authors: [TylerS1066]
 description: UltimateChat + MassiveCore Factions integration
-website: github yo
+website: https://github.com/TylerS1066/Ultimate-FactionsChat
