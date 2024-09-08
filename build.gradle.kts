@@ -8,17 +8,19 @@ repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://oss.sonatype.org/content/groups/public/")
+    maven("https://dependency.download/releases")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
-    compileOnly ("io.github.fabiozumbi12.UltimateChat:UltimateChat-Spigot:+"){ exclude(group = "*")}
+    compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
+    compileOnly("io.github.fabiozumbi12.UltimateChat:UltimateChat-Spigot:+"){ exclude(group = "*")}
+    compileOnly("dev.kitteh:factionsuuid:+")
 }
 
 group = "net.TylerS1066.ufc"
-version = "1.0.0_beta-1_gradle"
+version = "1.0.0_beta-1_FactionsUUID"
 description = "Ultimate-FactionsChat"
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 tasks.jar {
     archiveBaseName.set("Ultimate-FactionsChat")
